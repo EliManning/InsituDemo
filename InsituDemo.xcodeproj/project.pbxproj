@@ -17,7 +17,12 @@
 		4146EF6117EC044400803267 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4146EF6017EC044400803267 /* Default@2x.png */; };
 		4146EF6317EC044400803267 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4146EF6217EC044400803267 /* Default-568h@2x.png */; };
 		4146EF6617EC044500803267 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4146EF6417EC044500803267 /* MainStoryboard.storyboard */; };
-		4146EF6917EC044500803267 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146EF6817EC044500803267 /* ViewController.m */; };
+		4195F1F017EC090600F9752A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4195F1EF17EC090600F9752A /* TableViewController.m */; };
+		4195F1F317EC092400F9752A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4195F1F217EC092400F9752A /* DetailViewController.m */; };
+		4195F1F517EC0D2900F9752A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4195F1F417EC0D2900F9752A /* CoreData.framework */; };
+		4195F1F817EC0E5E00F9752A /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4195F1F617EC0E5E00F9752A /* Database.xcdatamodeld */; };
+		4195F1FE17EC132100F9752A /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 4195F1FD17EC132100F9752A /* Entity.m */; };
+		4195F20917ECC90D00F9752A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4195F20817ECC90D00F9752A /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +40,16 @@
 		4146EF6017EC044400803267 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4146EF6217EC044400803267 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4146EF6517EC044500803267 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		4146EF6717EC044500803267 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4146EF6817EC044500803267 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4195F1EE17EC090600F9752A /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		4195F1EF17EC090600F9752A /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		4195F1F117EC092400F9752A /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		4195F1F217EC092400F9752A /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		4195F1F417EC0D2900F9752A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4195F1F717EC0E5E00F9752A /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
+		4195F1FC17EC132100F9752A /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		4195F1FD17EC132100F9752A /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
+		4195F20717ECC90D00F9752A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		4195F20817ECC90D00F9752A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4195F1F517EC0D2900F9752A /* CoreData.framework in Frameworks */,
 				4146EF4D17EC044300803267 /* UIKit.framework in Frameworks */,
 				4146EF4F17EC044300803267 /* Foundation.framework in Frameworks */,
 				4146EF5117EC044300803267 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +87,7 @@
 		4146EF4B17EC044300803267 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4195F1F417EC0D2900F9752A /* CoreData.framework */,
 				4146EF4C17EC044300803267 /* UIKit.framework */,
 				4146EF4E17EC044300803267 /* Foundation.framework */,
 				4146EF5017EC044300803267 /* CoreGraphics.framework */,
@@ -86,9 +101,16 @@
 				4146EF5B17EC044400803267 /* AppDelegate.h */,
 				4146EF5C17EC044400803267 /* AppDelegate.m */,
 				4146EF6417EC044500803267 /* MainStoryboard.storyboard */,
-				4146EF6717EC044500803267 /* ViewController.h */,
-				4146EF6817EC044500803267 /* ViewController.m */,
+				4195F1EE17EC090600F9752A /* TableViewController.h */,
+				4195F1EF17EC090600F9752A /* TableViewController.m */,
+				4195F1F117EC092400F9752A /* DetailViewController.h */,
+				4195F1F217EC092400F9752A /* DetailViewController.m */,
+				4195F20717ECC90D00F9752A /* MBProgressHUD.h */,
+				4195F20817ECC90D00F9752A /* MBProgressHUD.m */,
+				4195F1FC17EC132100F9752A /* Entity.h */,
+				4195F1FD17EC132100F9752A /* Entity.m */,
 				4146EF5317EC044300803267 /* Supporting Files */,
+				4195F1F617EC0E5E00F9752A /* Database.xcdatamodeld */,
 			);
 			path = InsituDemo;
 			sourceTree = "<group>";
@@ -175,7 +197,11 @@
 			files = (
 				4146EF5917EC044400803267 /* main.m in Sources */,
 				4146EF5D17EC044400803267 /* AppDelegate.m in Sources */,
-				4146EF6917EC044500803267 /* ViewController.m in Sources */,
+				4195F1F017EC090600F9752A /* TableViewController.m in Sources */,
+				4195F1F317EC092400F9752A /* DetailViewController.m in Sources */,
+				4195F1F817EC0E5E00F9752A /* Database.xcdatamodeld in Sources */,
+				4195F1FE17EC132100F9752A /* Entity.m in Sources */,
+				4195F20917ECC90D00F9752A /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +318,22 @@
 				4146EF6E17EC044500803267 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4195F1F617EC0E5E00F9752A /* Database.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4195F1F717EC0E5E00F9752A /* Database.xcdatamodel */,
+			);
+			currentVersion = 4195F1F717EC0E5E00F9752A /* Database.xcdatamodel */;
+			path = Database.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4146EF3F17EC044200803267 /* Project object */;
 }
